@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/image_view"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:layout_gravity="left"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/ic_launcher"
+        android:longClickable="false" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="16dp"
+            android:text="Large Text"
+            android:layout_margin="15dp"
+            android:id="@+id/baslik_textView"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:layout_margin="15dp"
+            android:maxLines="2"
+            android:textSize="15dp"
+            android:id="@+id/tarih_textView" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:layout_margin="15dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/detay_textView" />
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harita Icin Tiklayin"
+        android:id="@+id/harita_button"/>
+
+</LinearLayout>
